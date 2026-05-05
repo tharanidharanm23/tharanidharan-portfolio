@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter, Send, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, Send, MapPin } from "lucide-react";
 import { useState } from "react";
 import { Reveal, SectionHeader } from "./Reveal";
 

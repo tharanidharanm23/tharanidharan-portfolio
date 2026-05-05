@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, Cpu, Database, Globe, LineChart, Sparkles, Bot, Cloud } from "lucide-react";
+import { Brain, Cpu, Globe } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 const interests = [
