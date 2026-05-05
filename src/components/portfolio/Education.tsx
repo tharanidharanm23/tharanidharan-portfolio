@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
-import college from "@/assets/college.jpg";
-import school from "@/assets/school.jpg";
+import college from "@/assets/kec.webp";
+import school from "@/assets/vvmhss.jpg";
 
 const items = [
   {
@@ -28,11 +28,10 @@ export function Education() {
         <SectionHeader
           eyebrow="Journey"
           title="Education & Background"
-          subtitle="Building strong foundations in computer science, AI, and engineering."
         />
 
         <div className="relative">
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-primary/40 to-transparent hidden md:block" />
+          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-primary/40 to-transparent hidden md:block" />
           <div className="space-y-12">
             {items.map((it, i) => (
               <Reveal key={i} delay={i * 0.1}>
@@ -42,7 +41,7 @@ export function Education() {
                     transition={{ type: "spring", stiffness: 200 }}
                     className="relative group [direction:ltr]"
                   >
-                    <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-2xl opacity-0 group-hover:opacity-60 blur-xl transition-opacity" />
+                    <div className="absolute -inset-2 bg-linear-to-r from-primary to-accent rounded-2xl opacity-0 group-hover:opacity-60 blur-xl transition-opacity" />
                     <div className="relative glass-strong rounded-2xl overflow-hidden gradient-border">
                       <img
                         src={it.image}

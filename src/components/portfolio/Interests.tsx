@@ -20,7 +20,7 @@ export function Interests() {
                 whileHover={{ scale: 1.08, y: -4 }}
                 className="group glass rounded-full px-5 py-3 flex items-center gap-3 hover:bg-white/10 cursor-default"
               >
-                <span className="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:rotate-12 transition-transform">
+                <span className="h-8 w-8 rounded-full bg-linear-to-br from-primary to-accent flex items-center justify-center group-hover:rotate-12 transition-transform">
                   <it.icon className="h-4 w-4 text-primary-foreground" />
                 </span>
                 <span className="font-medium">{it.label}</span>

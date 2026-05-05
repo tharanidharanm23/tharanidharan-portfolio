@@ -25,7 +25,7 @@ export function Certifications() {
                 className="group glass-strong rounded-2xl p-6 relative overflow-hidden gradient-border h-full flex flex-col"
               >
                 <div className="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-primary/30 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 shadow-lg">
+                <div className="h-12 w-12 rounded-xl bg-linear-to-br from-primary to-accent flex items-center justify-center mb-4 shadow-lg">
                   <Award className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-bold text-lg leading-tight">{c.title}</h3>
@@ -48,7 +48,7 @@ export function Certifications() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           onClick={() => setOpen(null)}
-          className="fixed inset-0 z-[60] bg-background/80 backdrop-blur-md flex items-center justify-center p-6"
+          className="fixed inset-0 z-60 bg-background/80 backdrop-blur-md flex items-center justify-center p-6"
         >
           <motion.div
             initial={{ scale: 0.9 }}

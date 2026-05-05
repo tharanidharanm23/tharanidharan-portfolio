@@ -19,7 +19,7 @@ export function Contact() {
           <Reveal>
             <div className="glass-strong rounded-2xl p-8 h-full gradient-border space-y-5">
               <div className="flex items-start gap-4">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shrink-0">
+                <div className="h-10 w-10 rounded-xl bg-linear-to-br from-primary to-accent flex items-center justify-center shrink-0">
                   <Mail className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <div>
@@ -29,7 +29,7 @@ export function Contact() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-accent to-neon-pink flex items-center justify-center shrink-0">
+                <div className="h-10 w-10 rounded-xl bg-linear-to-br from-accent to-neon-pink flex items-center justify-center shrink-0">
                   <MapPin className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <div>
@@ -91,12 +91,12 @@ export function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="group relative w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold overflow-hidden"
+                className="group relative w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {sent ? "Message Sent ✨" : <>Send Message <Send className="h-4 w-4" /></>}
                 </span>
-                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/30 to-transparent" />
               </motion.button>
             </form>
           </Reveal>

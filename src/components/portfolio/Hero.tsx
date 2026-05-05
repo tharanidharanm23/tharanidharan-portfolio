@@ -58,7 +58,7 @@ export function Hero() {
             Hi, I'm <br />
             <span className="gradient-text">Tharanidharan M</span>
           </h1>
-          <div className="text-2xl md:text-3xl mt-6 font-medium min-h-[2.5rem]">
+          <div className="text-2xl md:text-3xl mt-6 font-medium min-h-10">
             <Typewriter />
           </div>
           <p className="mt-6 text-muted-foreground text-lg max-w-xl">
@@ -104,18 +104,18 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="relative mx-auto"
         >
-          <div className="absolute -inset-8 bg-gradient-to-tr from-primary via-accent to-neon-pink rounded-full blur-3xl opacity-40 animate-pulse" />
+          <div className="absolute -inset-8 bg-linear-to-tr from-primary via-accent to-neon-pink rounded-full blur-3xl opacity-40 animate-pulse" />
           <motion.div
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative glass-strong rounded-[2rem] p-3 gradient-border"
+            className="relative glass-strong rounded-4xl p-3 gradient-border"
           >
             <img
               src={profile}
               alt="Tharanidharan M"
               width={400}
               height={400}
-              className="rounded-[1.5rem] w-72 h-72 md:w-96 md:h-96 object-cover"
+              className="rounded-3xl w-72 h-72 md:w-96 md:h-96 object-cover"
             />
           </motion.div>
           <motion.div
@@ -148,10 +148,10 @@ function MagneticButton({
         href={href}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.96 }}
-        className={`${base} bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg hover:shadow-[0_0_40px_oklch(0.7_0.25_300/0.6)]`}
+        className={`${base} bg-linear-to-r from-primary to-accent text-primary-foreground shadow-lg hover:shadow-[0_0_40px_oklch(0.7_0.25_300/0.6)]`}
       >
         <span className="relative z-10 flex items-center gap-2">{children}</span>
-        <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+        <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/30 to-transparent" />
       </motion.a>
     );
   }
