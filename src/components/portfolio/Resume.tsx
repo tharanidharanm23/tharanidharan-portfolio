@@ -14,7 +14,7 @@ export function Resume() {
                 <FileText className="h-8 w-8 text-primary-foreground" />
               </div>
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
-                Want the <span className="gradient-text">full story</span>?
+                Download my <span className="gradient-text">RESUME</span>?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
                 Download my résumé to see detailed experience, projects, and achievements.
