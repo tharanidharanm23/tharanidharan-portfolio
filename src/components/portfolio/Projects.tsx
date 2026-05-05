@@ -66,7 +66,7 @@ function TiltCard({ p, onDetails }: { p: Project; onDetails: () => void }) {
       onMouseMove={handleMouse}
       onMouseLeave={() => { x.set(0); y.set(0); }}
       style={{ rotateX: rx, rotateY: ry, transformStyle: "preserve-3d" }}
-      className="group relative"
+      className="group relative h-full"
     >
       <div className="absolute -inset-1 bg-linear-to-r from-primary via-accent to-neon-pink rounded-2xl opacity-0 group-hover:opacity-70 blur-xl transition-opacity duration-500" />
       <div className="relative glass-strong rounded-2xl overflow-hidden gradient-border h-full flex flex-col">
@@ -132,7 +132,7 @@ export function Projects() {
           title="Featured Projects"
           subtitle="A glimpse into the products and experiments I've crafted."
         />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ perspective: 1200 }}>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch" style={{ perspective: 1200 }}>
           {projects.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.1}>
               <TiltCard p={p} onDetails={() => setOpen(p)} />

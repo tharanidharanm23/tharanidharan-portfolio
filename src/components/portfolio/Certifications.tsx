@@ -27,7 +27,7 @@ export function Certifications() {
   return (
     <section id="certs" className="py-32 px-6">
       <div className="container mx-auto max-w-6xl">
-        <SectionHeader eyebrow="Recognition" title="Certifications & Achievements" />
+        <SectionHeader eyebrow="Recognition" title="Certification Centre" />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certs.map((c, i) => (

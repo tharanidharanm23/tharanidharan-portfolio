@@ -66,21 +66,31 @@ export function Contact() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
+                const form = new FormData(e.currentTarget);
+                const name = String(form.get("name") || "");
+                const email = String(form.get("email") || "");
+                const subject = String(form.get("subject") || "");
+                const message = String(form.get("message") || "");
+                const body = [`Name: ${name}`, `Email: ${email}`, "", message].join("\n");
+                const mailto = `mailto:tharanidharanm23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.open(mailto, "_blank", "noopener,noreferrer");
                 setSent(true);
                 setTimeout(() => setSent(false), 3000);
+                e.currentTarget.reset();
               }}
               className="glass-strong rounded-2xl p-8 gradient-border space-y-5"
             >
               <div className="grid sm:grid-cols-2 gap-4">
-                <Field label="Name" type="text" placeholder="Your name" />
-                <Field label="Email" type="email" placeholder="you@email.com" />
+                <Field name="name" label="Name" type="text" placeholder="Your name" />
+                <Field name="email" label="Email" type="email" placeholder="you@email.com" />
               </div>
-              <Field label="Subject" type="text" placeholder="What's it about?" />
+              <Field name="subject" label="Subject" type="text" placeholder="What's it about?" />
               <div>
                 <label className="text-xs uppercase tracking-wider text-muted-foreground mb-2 block">
                   Message
                 </label>
                 <textarea
+                  name="message"
                   required
                   rows={4}
                   placeholder="Tell me about your project..."

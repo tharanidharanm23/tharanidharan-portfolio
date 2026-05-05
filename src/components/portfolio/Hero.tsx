@@ -88,6 +88,8 @@ export function Hero() {
               <motion.a
                 key={i}
                 href={href}
+                target="_blank"
+                rel="noreferrer"
                 whileHover={{ y: -4, scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="glass h-11 w-11 rounded-full flex items-center justify-center text-muted-foreground hover:text-primary hover:glow transition-colors"
