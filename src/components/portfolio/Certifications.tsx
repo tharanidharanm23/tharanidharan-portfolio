@@ -2,15 +2,27 @@ import { motion } from "framer-motion";
 import { Award, Eye, X } from "lucide-react";
 import { useState } from "react";
 import { Reveal, SectionHeader } from "./Reveal";
-import cert from "@/assets/cert.jpg";
+import cert1 from "@/assets/cert1.png";
+import cert2 from "@/assets/cert2.png";
 
 const certs = [
-  { title: "MongoDB Certified Developer Associate", issuer: "MongoDB", year: "2024" },
-  { title: "Oracle Certified Professional — Java SE 17 Developer", issuer: "Oracle", year: "2024" },
+  {
+    title: "MongoDB Certified Developer Associate",
+    issuer: "MongoDB",
+    year: "2024",
+    image: cert1,
+  },
+  {
+    title: "Oracle Certified Professional — Java SE 17 Developer",
+    issuer: "Oracle",
+    year: "2024",
+    image: cert2,
+  },
 ];
 
 export function Certifications() {
   const [open, setOpen] = useState<string | null>(null);
+  const selectedCert = open ? certs.find((c) => c.title === open) : null;
 
   return (
     <section id="certs" className="py-32 px-6">
@@ -35,7 +47,7 @@ export function Certifications() {
                   onClick={() => setOpen(c.title)}
                   className="mt-5 self-start inline-flex items-center gap-2 text-xs px-4 py-2 rounded-full glass hover:bg-white/10 transition"
                 >
-                  <Eye className="h-3.5 w-3.5" /> View Certificate
+                  <Eye className="h-3.5 w-3.5" /> View certificates
                 </button>
               </motion.div>
             </Reveal>
@@ -43,7 +55,7 @@ export function Certifications() {
         </div>
       </div>
 
-      {open && (
+      {open && selectedCert && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -62,7 +74,7 @@ export function Certifications() {
             >
               <X className="h-4 w-4" />
             </button>
-            <img src={cert} alt={open} className="rounded-2xl w-full gradient-border" />
+            <img src={selectedCert.image} alt={open} className="rounded-2xl w-full gradient-border" />
             <p className="text-center mt-4 text-muted-foreground">{open}</p>
           </motion.div>
         </motion.div>

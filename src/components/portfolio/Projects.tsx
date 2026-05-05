@@ -2,9 +2,9 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Github, ExternalLink, FileText, X } from "lucide-react";
 import { useState, type MouseEvent } from "react";
 import { Reveal, SectionHeader } from "./Reveal";
-import p1 from "@/assets/project1.jpg";
-import p2 from "@/assets/project2.jpg";
-import p3 from "@/assets/project3.jpg";
+import p1 from "@/assets/project1.png";
+import p2 from "@/assets/project2.png";
+import p3 from "@/assets/project3.png";
 
 type Project = {
   title: string;
@@ -24,8 +24,8 @@ const projects: Project[] = [
       "Built an intelligent computer vision system using machine learning–based object detection. Processes real-time video and images to identify violations and improves road safety through automated monitoring and accuracy evaluation.",
     tech: ["Python", "OpenCV", "TensorFlow", "Keras", "CNN"],
     image: p1,
-    github: "https://github.com/tharanidharanm23",
-    demo: "https://github.com/tharanidharanm23",
+    github: "https://github.com/tharanidharanm23/helmet-detection-system",
+    demo: "https://github.com/tharanidharanm23/helmet-detection-system",
   },
   {
     title: "Blood Haven — Blood Bank Management",
@@ -34,8 +34,8 @@ const projects: Project[] = [
       "Built Blood Haven, a MERN-based Blood Bank Management System with smart donor matching, emergency prioritization, location-based search, notifications, and a live deployed dashboard.",
     tech: ["MongoDB", "Express.js", "React", "Node.js"],
     image: p2,
-    github: "https://github.com/tharanidharanm23",
-    demo: "https://github.com/tharanidharanm23",
+    github: "https://github.com/tharanidharanm23/blood-haven",
+    demo: "https://github.com/tharanidharanm23/blood-haven",
   },
   {
     title: "LearnSphere — E-Learning Platform",
@@ -44,8 +44,8 @@ const projects: Project[] = [
       "Developed a full-stack MERN application for online course management and enrollment. Implemented JWT authentication with role-based access (Student/Admin). Designed RESTful APIs with MongoDB schema and a progress tracking system.",
     tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
     image: p3,
-    github: "https://github.com/tharanidharanm23",
-    demo: "https://github.com/tharanidharanm23",
+    github: "https://github.com/Saranbalusamy/odoo-x-sns",
+    demo: "https://github.com/Saranbalusamy/odoo-x-sns",
   },
 ];
 

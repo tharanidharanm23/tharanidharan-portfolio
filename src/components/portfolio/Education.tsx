@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 import college from "@/assets/kec.webp";
-import school from "@/assets/vvmhss.jpg";
+import school from "@/assets/VVMHSS.png";
 
 const items = [
   {

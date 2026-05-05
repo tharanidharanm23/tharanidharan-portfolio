@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, FileText } from "lucide-react";
 import { Reveal } from "./Reveal";
+import resumePdf from "@/assets/My Resume.pdf";
 
 export function Resume() {
   return (
@@ -20,7 +21,9 @@ export function Resume() {
                 Download my résumé to see detailed experience, projects, and achievements.
               </p>
               <motion.a
-                href="#"
+                href={resumePdf}
+                target="_blank"
+                rel="noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
                 className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-linear-to-r from-primary to-accent text-primary-foreground font-semibold overflow-hidden shadow-[0_0_40px_oklch(0.7_0.25_300/0.4)]"

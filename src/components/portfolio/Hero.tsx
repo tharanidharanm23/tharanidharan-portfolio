@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, ArrowRight, Download } from "lucide-react";
-import profile from "@/assets/profile.jpg";
+import profile from "@/assets/profile.png";
 
 const roles = [
   "AI & Data Science Student",
