@@ -24,7 +24,8 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wider">Email</p>
-                  <p className="font-medium">tharanidharan@example.com</p>
+                  <p className="font-medium">tharanidharanm23@gmail.com</p>
+                  <p className="text-xs text-muted-foreground mt-1">+91 9500324562</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -33,17 +34,23 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wider">Location</p>
-                  <p className="font-medium">Coimbatore, India</p>
+                  <p className="font-medium">Tiruppur, Tamilnadu, India</p>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-white/10">
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Socials</p>
                 <div className="flex gap-3">
-                  {[Github, Linkedin, Twitter, Mail].map((Icon, i) => (
+                  {[
+                    { Icon: Github, href: "https://github.com/tharanidharanm23" },
+                    { Icon: Linkedin, href: "https://linkedin.com/in/tharanidharan-m-1b7245348" },
+                    { Icon: Mail, href: "mailto:tharanidharanm23@gmail.com" },
+                  ].map(({ Icon, href }, i) => (
                     <motion.a
                       key={i}
-                      href="#"
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
                       whileHover={{ y: -4, scale: 1.1 }}
                       className="glass h-11 w-11 rounded-full flex items-center justify-center hover:text-primary hover:glow transition"
                     >

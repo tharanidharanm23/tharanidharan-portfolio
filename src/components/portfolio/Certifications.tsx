@@ -5,12 +5,8 @@ import { Reveal, SectionHeader } from "./Reveal";
 import cert from "@/assets/cert.jpg";
 
 const certs = [
-  { title: "Machine Learning Specialization", issuer: "DeepLearning.AI · Coursera", year: "2024" },
-  { title: "Full Stack Web Development", issuer: "Meta", year: "2024" },
-  { title: "Google Data Analytics", issuer: "Google", year: "2023" },
-  { title: "AWS Cloud Practitioner", issuer: "Amazon Web Services", year: "2024" },
-  { title: "Python for Data Science", issuer: "IBM", year: "2023" },
-  { title: "TensorFlow Developer", issuer: "Google", year: "2024" },
+  { title: "MongoDB Certified Developer Associate", issuer: "MongoDB", year: "2024" },
+  { title: "Oracle Certified Professional — Java SE 17 Developer", issuer: "Oracle", year: "2024" },
 ];
 
 export function Certifications() {

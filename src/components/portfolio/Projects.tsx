@@ -18,34 +18,34 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "AI Insights Dashboard",
-    description: "Real-time ML analytics platform with predictive modeling and interactive charts.",
+    title: "HelmetGuard AI — Helmet Detection System",
+    description: "Intelligent computer vision system that detects whether two-wheeler riders are wearing helmets.",
     details:
-      "Built a full-stack AI dashboard using Python, FastAPI, and React. Trained classification models with scikit-learn achieving 94% accuracy on customer churn prediction. Visualized insights with D3 and animated transitions.",
-    tech: ["Python", "FastAPI", "React", "scikit-learn", "D3"],
+      "Built an intelligent computer vision system using machine learning–based object detection. Processes real-time video and images to identify violations and improves road safety through automated monitoring and accuracy evaluation.",
+    tech: ["Python", "OpenCV", "TensorFlow", "Keras", "CNN"],
     image: p1,
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/tharanidharanm23",
+    demo: "https://github.com/tharanidharanm23",
   },
   {
-    title: "NeoCart — E-Commerce",
-    description: "Modern commerce experience with smart recommendations and seamless checkout.",
+    title: "Blood Haven — Blood Bank Management",
+    description: "MERN-based blood bank platform with smart donor matching and live dashboard.",
     details:
-      "End-to-end e-commerce platform powered by Next.js, Stripe, and a recommendation engine using collaborative filtering. Lighthouse score 98.",
-    tech: ["Next.js", "TypeScript", "Stripe", "Postgres"],
+      "Built Blood Haven, a MERN-based Blood Bank Management System with smart donor matching, emergency prioritization, location-based search, notifications, and a live deployed dashboard.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js"],
     image: p2,
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/tharanidharanm23",
+    demo: "https://github.com/tharanidharanm23",
   },
   {
-    title: "AuraChat — AI Assistant",
-    description: "Conversational AI with RAG, voice input, and persistent memory.",
+    title: "LearnSphere — E-Learning Platform",
+    description: "Full-stack MERN application for online course management and enrollment.",
     details:
-      "Conversational AI built with LangChain, OpenAI, and pgvector for retrieval-augmented generation. Supports streaming responses and voice input via Whisper.",
-    tech: ["LangChain", "OpenAI", "pgvector", "React"],
+      "Developed a full-stack MERN application for online course management and enrollment. Implemented JWT authentication with role-based access (Student/Admin). Designed RESTful APIs with MongoDB schema and a progress tracking system.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
     image: p3,
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/tharanidharanm23",
+    demo: "https://github.com/tharanidharanm23",
   },
 ];
 
