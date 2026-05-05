@@ -5,8 +5,9 @@ import profile from "@/assets/profile.jpg";
 
 const roles = [
   "AI & Data Science Student",
-  "Full Stack Developer",
-  "ML Enthusiast",
+  "MERN Stack Developer",
+  "Deep Learning Enthusiast",
+  "Computer Vision Developer",
 ];
 
 function Typewriter() {
@@ -61,8 +62,9 @@ export function Hero() {
             <Typewriter />
           </div>
           <p className="mt-6 text-muted-foreground text-lg max-w-xl">
-            I craft intelligent systems and beautiful interfaces — blending machine learning,
-            data science, and modern web engineering into delightful products.
+            Artificial Intelligence and Data Science student skilled in MERN stack development
+            and deep learning. Experienced in building secure REST APIs, authentication systems,
+            and CNN-based computer vision models.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -79,9 +81,9 @@ export function Hero() {
 
           <div className="mt-10 flex items-center gap-4">
             {[
-              { Icon: Github, href: "https://github.com" },
-              { Icon: Linkedin, href: "https://linkedin.com" },
-              { Icon: Mail, href: "mailto:hello@example.com" },
+              { Icon: Github, href: "https://github.com/tharanidharanm23" },
+              { Icon: Linkedin, href: "https://linkedin.com/in/tharanidharan-m-1b7245348" },
+              { Icon: Mail, href: "mailto:tharanidharanm23@gmail.com" },
             ].map(({ Icon, href }, i) => (
               <motion.a
                 key={i}

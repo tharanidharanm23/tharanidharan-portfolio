@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { Reveal, SectionHeader } from "./Reveal";
 
 const skills = [
-  { name: "Python", level: 92 },
-  { name: "JavaScript / TS", level: 88 },
-  { name: "React", level: 90 },
-  { name: "Node.js", level: 82 },
-  { name: "Machine Learning", level: 85 },
-  { name: "TensorFlow", level: 78 },
-  { name: "SQL / Postgres", level: 80 },
-  { name: "Tailwind CSS", level: 92 },
-  { name: "Java", level: 75 },
-  { name: "Git / GitHub", level: 88 },
-  { name: "Pandas / NumPy", level: 86 },
-  { name: "FastAPI", level: 80 },
+  { name: "Java", level: 88 },
+  { name: "Python", level: 90 },
+  { name: "C", level: 80 },
+  { name: "React.js", level: 88 },
+  { name: "HTML / CSS", level: 92 },
+  { name: "Node.js", level: 85 },
+  { name: "Express.js", level: 84 },
+  { name: "MongoDB", level: 86 },
+  { name: "MySQL", level: 80 },
+  { name: "TensorFlow / Keras", level: 78 },
+  { name: "OpenCV / CNN", level: 80 },
+  { name: "Git & GitHub", level: 88 },
 ];
 
 export function Skills() {

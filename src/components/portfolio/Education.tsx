@@ -6,24 +6,17 @@ import school from "@/assets/school.jpg";
 
 const items = [
   {
-    institution: "Sri Eshwar College of Engineering",
+    institution: "Kongu Engineering College — Erode, Tamilnadu",
     degree: "B.Tech — Artificial Intelligence & Data Science",
     year: "2023 — 2027",
-    score: "CGPA: 8.9 / 10",
+    score: "CGPA: 7.81",
     image: college,
   },
   {
-    institution: "Velammal Vidhyashram",
+    institution: "Vidhya Vikashni Mat. Hr. Sec. School — Tiruppur",
     degree: "Higher Secondary — Computer Science",
     year: "2021 — 2023",
-    score: "Percentage: 92%",
-    image: school,
-  },
-  {
-    institution: "Velammal Vidhyashram",
-    degree: "Secondary School (CBSE)",
-    year: "2020 — 2021",
-    score: "Percentage: 94%",
+    score: "HSC: 89.66%",
     image: school,
   },
 ];

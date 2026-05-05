@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
-import { Brain, Cpu, Database, Globe, LineChart, Sparkles, Bot, Cloud } from "lucide-react";
+import { Brain, Cpu, Globe } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 const interests = [
-  { icon: Brain, label: "Artificial Intelligence" },
-  { icon: Bot, label: "Generative AI / LLMs" },
-  { icon: LineChart, label: "Data Science" },
-  { icon: Globe, label: "Web Development" },
-  { icon: Database, label: "Big Data" },
-  { icon: Cpu, label: "Deep Learning" },
-  { icon: Cloud, label: "Cloud Computing" },
-  { icon: Sparkles, label: "UX Engineering" },
+  { icon: Globe, label: "Full-Stack Web Development" },
+  { icon: Brain, label: "Machine Learning" },
+  { icon: Cpu, label: "Computer Vision" },
 ];
 
 export function Interests() {
