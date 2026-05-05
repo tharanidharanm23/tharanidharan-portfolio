@@ -17,7 +17,7 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 glass-strong rounded-full px-2 py-2 hidden md:flex items-center gap-1"
     >
-      <span className="px-4 font-bold gradient-text text-sm tracking-wider">TM.</span>
+      <span className="px-4 font-bold gradient-text text-sm tracking-wider">Welcome!</span>
       {links.map((l) => (
         <a
           key={l.href}
