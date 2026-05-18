@@ -35,7 +35,7 @@ const projects: Project[] = [
     tech: ["MongoDB", "Express.js", "React", "Node.js"],
     image: p2,
     github: "https://github.com/tharanidharanm23/blood-haven",
-    demo: "https://github.com/tharanidharanm23/blood-haven",
+    demo: "https://blood-haven.tharanidharanm23.workers.dev/",
   },
   {
     title: "LearnSphere — E-Learning Platform",
